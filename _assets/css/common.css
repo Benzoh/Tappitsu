@@ -1,0 +1,356 @@
+/*common.css*/
+
+@font-face {
+	/* TODO 書き換え */
+	font-family: 'JKG-M_3';
+	src: url('../../_assets/fonts/JKG-M_3.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'test';
+    src: url('../../_assets/fonts/test.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.test {
+	font-family: 'test';
+	/*font-family: 'JKG-M_3';*/
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #F5F1E9;
+	font-size: 12px;
+	font-size: 1.2rem;
+	padding-top: 20px;
+}
+.wrap {
+	margin: 0 auto;
+	max-width: 1155px;
+	width: 100%;
+	background-color: #fff;
+	padding: 30px;
+}
+
+@media screen and ( max-width:767px ) {
+	.wrap {
+		width: 227%;
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style-type: none;
+	margin: 0 0 30px 0;
+}
+
+h1, h2, h3 {
+	font-size: 24px;
+	font-size: 2.4rem;
+	margin-top: 0;
+}
+
+h1 {
+	font-family: 'JKG-M_3';
+	font-size: 29px;
+	font-size: 2.9rem;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h3:before {
+	content: "■ ";
+}
+
+h4 {
+	margin-top: 0;
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+input {
+	padding: 5px 0 5px 5px;
+	border-radius: 3px;
+}
+
+input:focus {
+    border:solid 1px #ff0000;
+}
+
+header {
+	overflow: hidden;
+}
+
+nav {
+	float: right;
+}
+
+footer {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.button {
+	/*color: #999;*/
+	width: 100px;
+	/*padding: 20px 0;*/
+	height: 30px;
+}
+
+.return {
+	font-size: 18px;
+}
+
+.valid {
+	color: #FF0000;
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	padding-top: 0;
+	max-width: 1125px !important;
+}
+
+.m-gnavi {
+	overflow: hidden;
+}
+.m-gnavi li {
+	float: left;
+	padding: 10px 30px;
+	border-bottom: solid 1px #999;
+	margin-right: 10px;
+}
+
+.m-content {
+	overflow: hidden;
+}
+
+.m-form {
+	float: left;
+	margin-right: 200px;
+	/*padding: 20px 0;*/
+}
+
+.m-layout {
+	float: left;
+	padding-left: 120px;
+}
+
+@media screen and ( max-width:767px ) {
+	.m-layout {
+		float: left;
+		padding-left: 0;
+		margin-top: 50px;
+	}
+}
+
+.m-layout img {
+	width: 300px;
+	/*height: 400px;*/
+	background-color: #999;
+	margin-right: 20px;
+}
+
+@media screen and ( max-width:767px ) {
+	.m-layout img {
+		width: 50%;
+		/*height: 400px;*/
+		background-color: #999;
+		margin-left: 13%;
+		margin-right: 0;
+	}
+}
+
+.m-layout_text {
+	float: right;
+	padding-top: 150px;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+@media screen and ( max-width:767px ) {
+	.m-layout_text {
+		float: left;
+		padding-top: 0;
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
+}
+
+.m-attention {
+	margin: 30px 0;
+	border: solid 1px #666;
+	padding: 15px 30px;
+}
+
+.m-list {
+	margin-top: 30px;
+	padding: 20px;
+	border-top: solid 1px #999;
+	overflow: hidden;
+}
+
+.m-list > ul > li {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 0;
+	height: 400px
+}
+
+.m-list .img img {
+	width: 200px;
+}
+
+.m-list .text li {
+	margin-bottom: 2px;
+}
+
+.tappitsu {
+	text-align: center;
+}
+
+.tappitsu img {
+	width: 600px;
+}
+
+.ads {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+
+
+/******************************
+
+ ソーシャルエリア全体を囲む要素
+ * 他のコンテンツと距離を取りたい場合は[margin]を設定して下さい
+
+******************************/
+.social-area-syncer {
+	width: 100% ;
+	min-height: 190px ;
+	background: #F5F1E9 ;	/* 背景色 */
+	padding: 1.5em 0 ;
+}
+
+/* デスクトップPCでは高さを拡張する */
+@media screen and ( min-width:480px ) {
+	.social-area-syncer {
+		min-height: 119px ;
+	}
+}
+
+
+/******************************
+
+ [ul]要素
+
+******************************/
+/* スマホ */
+ul.social-button-syncer {
+	width: 238px ;
+	margin: 24px auto ;
+	padding: 0 ;
+	border: none ;
+	list-style-type: none ;
+}
+
+/* デスクトップ */
+@media screen and ( min-width:480px ) {
+	ul.social-button-syncer {
+		width: 410px ;
+	}
+}
+
+
+/******************************
+
+ [li]要素
+
+******************************/
+ul.social-button-syncer li {
+	float: left ;
+	text-align: center ;
+	height: 71px ;
+	margin: 0 8px ;
+	padding:0 ;
+}
+
+
+/******************************
+
+ 各種ボタン
+
+******************************/
+/* [Twitter] */
+.sc-tw {
+	width: 71px ;
+}
+
+.sc-tw svg {
+	width: 30px ;
+	height: 30px ;
+ }
+
+.sc-tw a {
+	height: 56px ;
+	margin: 0 auto ;
+	padding-top: 6px ;
+	display: block ;
+	background: #1B95E0 ;
+	font-size: 12px ;
+	color: #fff ;
+	font-weight: 700 ;
+	text-decoration: none ;
+	letter-spacing: .5px ;
+	border-radius: 2px ;
+}
+
+.sc-tw a:hover {
+	color: #fff ;
+	background: #0c7abf ;
+}
+
+.sc-tw span:before {
+	white-space: pre ;
+	content: '\A' ;
+}
+
+/* [Facebook] */
+.sc-fb {
+	z-index: 99 ;
+	width: 69px ;
+}
+
+/* [LINE] */
+.sc-li {
+	width: 50px ;
+}
+
+.sc-li-img {
+	border: none ;
+	margin: 0 auto ;
+	padding:0 ;
+	width: 36px ;
+	height: 60px ;
+}
+
+/* デスクトップPCではLINEボタンを表示しない */
+@media screen and ( min-width:480px ) {
+	.sc-li {
+		display: none ;
+	}
+}
